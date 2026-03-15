@@ -57,7 +57,7 @@ export function Scribing() {
   return (
     <section id="smarter" className="relative scroll-mt-20 bg-navy-gradient text-white py-20 sm:py-28 overflow-hidden">
       <div className="absolute inset-0 bg-dots opacity-[0.03]" />
-      <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-orange/5 blur-3xl" />
+      <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-teal/5 blur-3xl" />
       <div className="absolute bottom-0 left-0 w-80 h-80 rounded-full bg-white/5 blur-3xl" />
 
       <Container className="relative z-10">
@@ -88,7 +88,7 @@ export function Scribing() {
               className="relative rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 text-center"
             >
               <motion.div
-                className="text-4xl font-bold text-orange"
+                className="text-4xl font-bold text-teal"
                 initial={{ scale: 0.5 }}
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true }}

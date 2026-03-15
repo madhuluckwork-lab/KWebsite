@@ -63,7 +63,7 @@ export function Navbar() {
                 "w-44 text-sm",
                 scrolled
                   ? "border-navy/20 bg-white text-navy"
-                  : "border-orange-300/30 bg-orange-500/10 text-orange-100"
+                  : "border-teal-300/30 bg-teal-500/10 text-teal-100"
               )}
             />
           </div>

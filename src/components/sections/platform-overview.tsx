@@ -17,7 +17,7 @@ function WaveformBg() {
   return (
     <div className="absolute inset-0 flex items-center justify-center opacity-20 overflow-hidden">
       <svg className="w-full h-full" viewBox="0 0 400 200" fill="none">
-        <path d="M0 100 Q50 60 100 100 T200 100 T300 100 T400 100" stroke="#e8722a" strokeWidth="2" fill="none" opacity="0.5" />
+        <path d="M0 100 Q50 60 100 100 T200 100 T300 100 T400 100" stroke="#2ab5a3" strokeWidth="2" fill="none" opacity="0.5" />
         <path d="M0 110 Q50 70 100 110 T200 110 T300 110 T400 110" stroke="#0f1b44" strokeWidth="1.5" fill="none" opacity="0.3" />
         {Array.from({ length: 30 }).map((_, i) => (
           <rect key={i} x={i * 13 + 5} y={80 + Math.sin(i * 0.5) * 30} width="4" height={20 + Math.sin(i * 0.7) * 15} rx="2" fill="#0f1b44" opacity="0.15" />
@@ -35,16 +35,16 @@ function NeuralNetBg() {
         {[[80,60],[160,120],[240,80],[320,140],[120,200],[200,240],[280,200],[360,260]].map(([cx,cy], i) => (
           <g key={i}>
             <circle cx={cx} cy={cy} r="8" fill="#0f1b44" opacity="0.3" />
-            <circle cx={cx} cy={cy} r="3" fill="#e8722a" opacity="0.6" />
+            <circle cx={cx} cy={cy} r="3" fill="#2ab5a3" opacity="0.6" />
           </g>
         ))}
         {/* Connections */}
         <line x1="80" y1="60" x2="160" y2="120" stroke="#0f1b44" strokeWidth="1" opacity="0.2" />
         <line x1="160" y1="120" x2="240" y2="80" stroke="#0f1b44" strokeWidth="1" opacity="0.2" />
-        <line x1="240" y1="80" x2="320" y2="140" stroke="#e8722a" strokeWidth="1" opacity="0.3" />
+        <line x1="240" y1="80" x2="320" y2="140" stroke="#2ab5a3" strokeWidth="1" opacity="0.3" />
         <line x1="120" y1="200" x2="200" y2="240" stroke="#0f1b44" strokeWidth="1" opacity="0.2" />
         <line x1="200" y1="240" x2="280" y2="200" stroke="#0f1b44" strokeWidth="1" opacity="0.2" />
-        <line x1="160" y1="120" x2="120" y2="200" stroke="#e8722a" strokeWidth="1" opacity="0.15" />
+        <line x1="160" y1="120" x2="120" y2="200" stroke="#2ab5a3" strokeWidth="1" opacity="0.15" />
         <line x1="240" y1="80" x2="280" y2="200" stroke="#0f1b44" strokeWidth="1" opacity="0.15" />
         <line x1="320" y1="140" x2="360" y2="260" stroke="#0f1b44" strokeWidth="1" opacity="0.2" />
       </svg>
@@ -57,7 +57,7 @@ function ShieldBg() {
     <div className="absolute -right-8 -top-8 opacity-10">
       <svg className="w-48 h-48" viewBox="0 0 200 200" fill="none">
         <path d="M100 20 L170 60 V120 C170 160 140 185 100 195 C60 185 30 160 30 120 V60 Z" stroke="#0f1b44" strokeWidth="3" fill="none" />
-        <path d="M100 40 L150 70 V115 C150 145 130 165 100 175 C70 165 50 145 50 115 V70 Z" stroke="#e8722a" strokeWidth="2" fill="none" opacity="0.5" />
+        <path d="M100 40 L150 70 V115 C150 145 130 165 100 175 C70 165 50 145 50 115 V70 Z" stroke="#2ab5a3" strokeWidth="2" fill="none" opacity="0.5" />
         <path d="M80 110 L95 125 L125 85" stroke="#0f1b44" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     </div>
@@ -68,17 +68,17 @@ function ChartBg() {
   return (
     <div className="absolute inset-0 flex items-end justify-center p-8 opacity-15 overflow-hidden">
       <svg className="w-full h-32" viewBox="0 0 300 100" fill="none">
-        <path d="M0 80 L40 65 L80 70 L120 45 L160 50 L200 30 L240 35 L280 15 L300 20" stroke="#e8722a" strokeWidth="2.5" fill="none" />
+        <path d="M0 80 L40 65 L80 70 L120 45 L160 50 L200 30 L240 35 L280 15 L300 20" stroke="#2ab5a3" strokeWidth="2.5" fill="none" />
         <path d="M0 80 L40 65 L80 70 L120 45 L160 50 L200 30 L240 35 L280 15 L300 20 V100 H0 Z" fill="url(#chart-fill)" />
         <defs>
           <linearGradient id="chart-fill" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#e8722a" stopOpacity="0.15" />
-            <stop offset="100%" stopColor="#e8722a" stopOpacity="0" />
+            <stop offset="0%" stopColor="#2ab5a3" stopOpacity="0.15" />
+            <stop offset="100%" stopColor="#2ab5a3" stopOpacity="0" />
           </linearGradient>
         </defs>
         {/* Dots on line */}
         {[[0,80],[80,70],[160,50],[240,35],[300,20]].map(([cx,cy], i) => (
-          <circle key={i} cx={cx} cy={cy} r="3" fill="#e8722a" opacity="0.6" />
+          <circle key={i} cx={cx} cy={cy} r="3" fill="#2ab5a3" opacity="0.6" />
         ))}
       </svg>
     </div>
@@ -93,10 +93,10 @@ function ClaimsBg() {
         <line x1="50" y1="60" x2="130" y2="60" stroke="#0f1b44" strokeWidth="2" opacity="0.5" />
         <line x1="50" y1="80" x2="130" y2="80" stroke="#0f1b44" strokeWidth="2" opacity="0.3" />
         <line x1="50" y1="100" x2="110" y2="100" stroke="#0f1b44" strokeWidth="2" opacity="0.3" />
-        <line x1="50" y1="120" x2="100" y2="120" stroke="#e8722a" strokeWidth="2" opacity="0.4" />
-        <rect x="50" y="38" width="30" height="10" rx="2" fill="#e8722a" opacity="0.3" />
-        <circle cx="130" cy="150" r="15" stroke="#e8722a" strokeWidth="2" fill="none" opacity="0.4" />
-        <path d="M125 150 L128 153 L135 145" stroke="#e8722a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" opacity="0.6" />
+        <line x1="50" y1="120" x2="100" y2="120" stroke="#2ab5a3" strokeWidth="2" opacity="0.4" />
+        <rect x="50" y="38" width="30" height="10" rx="2" fill="#2ab5a3" opacity="0.3" />
+        <circle cx="130" cy="150" r="15" stroke="#2ab5a3" strokeWidth="2" fill="none" opacity="0.4" />
+        <path d="M125 150 L128 153 L135 145" stroke="#2ab5a3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" opacity="0.6" />
       </svg>
     </div>
   );
@@ -107,11 +107,11 @@ function PlugBg() {
     <div className="absolute -right-6 -top-6 opacity-10">
       <svg className="w-40 h-40" viewBox="0 0 200 200" fill="none">
         <circle cx="70" cy="100" r="35" stroke="#0f1b44" strokeWidth="2" />
-        <circle cx="130" cy="100" r="35" stroke="#e8722a" strokeWidth="2" />
+        <circle cx="130" cy="100" r="35" stroke="#2ab5a3" strokeWidth="2" />
         <path d="M70 65 Q100 80 130 65" stroke="#0f1b44" strokeWidth="1.5" fill="none" opacity="0.4" />
         <path d="M70 135 Q100 120 130 135" stroke="#0f1b44" strokeWidth="1.5" fill="none" opacity="0.4" />
         {/* Arrows */}
-        <path d="M95 90 L105 100 L95 110" stroke="#e8722a" strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.5" />
+        <path d="M95 90 L105 100 L95 110" stroke="#2ab5a3" strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.5" />
       </svg>
     </div>
   );
@@ -210,7 +210,7 @@ export function PlatformOverview() {
                   <div>
                     <span className="text-xs uppercase tracking-widest text-white/40">{card.label}</span>
                     <motion.div
-                      className="mt-2 text-5xl font-bold text-orange"
+                      className="mt-2 text-5xl font-bold text-teal"
                       initial={{ opacity: 0, scale: 0.5 }}
                       whileInView={{ opacity: 1, scale: 1 }}
                       viewport={{ once: true }}

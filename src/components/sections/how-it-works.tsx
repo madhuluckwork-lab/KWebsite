@@ -99,7 +99,7 @@ export function HowItWorks() {
                     key={i}
                     className="rounded-xl border border-slate-200 bg-white px-6 overflow-hidden transition-all hover:border-navy/20"
                   >
-                    <AccordionTrigger className="text-left text-sm font-semibold text-navy py-4 hover:text-orange transition-colors [&[data-state=open]]:text-orange">
+                    <AccordionTrigger className="text-left text-sm font-semibold text-navy py-4 hover:text-teal transition-colors [&[data-state=open]]:text-teal">
                       {item.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-sm text-slate-500 leading-relaxed pb-4">

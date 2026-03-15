@@ -22,7 +22,7 @@ export function CodingEngine() {
             </span>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy">
               Precision Coding,{" "}
-              <span className="text-orange">Powered by AI</span>
+              <span className="text-teal">Powered by AI</span>
             </h2>
             <p className="max-w-2xl mx-auto text-lg text-slate-500">
               Our AI understands procedure context, anatomical placement, and clinical intent — extracting the specific details that determine correct code selection.
@@ -70,7 +70,7 @@ export function CodingEngine() {
             {[
               { label: "Encounters", value: "27,043", color: "text-navy" },
               { label: "Avg. Reimbursement", value: "$73.8", color: "text-emerald-600" },
-              { label: "Claim Turnaround", value: "18 Days", color: "text-orange" },
+              { label: "Claim Turnaround", value: "18 Days", color: "text-teal" },
             ].map((item) => (
               <div key={item.label} className="rounded-xl border border-slate-100 bg-slate-50/50 p-4 text-center">
                 <div className={`text-2xl font-bold ${item.color}`}>{item.value}</div>
@@ -118,11 +118,11 @@ export function CodingEngine() {
                   const Icon = item.icon;
                   return (
                     <div key={item.title} className="group flex gap-3 items-start">
-                      <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-orange/10">
-                        <Icon className="h-4 w-4 text-orange" />
+                      <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-teal/10">
+                        <Icon className="h-4 w-4 text-teal" />
                       </div>
                       <div>
-                        <div className="text-sm font-semibold text-navy group-hover:text-orange transition-colors">{item.title}</div>
+                        <div className="text-sm font-semibold text-navy group-hover:text-teal transition-colors">{item.title}</div>
                         <p className="text-xs text-slate-400 mt-0.5">{item.desc}</p>
                       </div>
                     </div>
@@ -142,15 +142,15 @@ export function CodingEngine() {
                 return (
                   <StaggerItem key={item.title}>
                     <motion.div
-                      className="group relative rounded-2xl border border-slate-100 bg-white p-5 transition-all duration-500 hover:border-orange/30 hover:shadow-xl hover:shadow-orange/5"
+                      className="group relative rounded-2xl border border-slate-100 bg-white p-5 transition-all duration-500 hover:border-teal/30 hover:shadow-xl hover:shadow-teal/5"
                       whileHover={{ y: -4 }}
                       transition={{ type: "spring", stiffness: 300 }}
                     >
-                      <span className="absolute top-3 right-4 text-3xl font-bold text-slate-100 group-hover:text-orange/10 transition-colors">{item.num}</span>
-                      <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-orange/10 mb-4 transition-all duration-300 group-hover:bg-orange/20 group-hover:scale-110">
-                        <Icon className="h-5 w-5 text-orange" />
+                      <span className="absolute top-3 right-4 text-3xl font-bold text-slate-100 group-hover:text-teal/10 transition-colors">{item.num}</span>
+                      <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-teal/10 mb-4 transition-all duration-300 group-hover:bg-teal/20 group-hover:scale-110">
+                        <Icon className="h-5 w-5 text-teal" />
                       </div>
-                      <h4 className="text-sm font-semibold text-navy group-hover:text-orange transition-colors">{item.title}</h4>
+                      <h4 className="text-sm font-semibold text-navy group-hover:text-teal transition-colors">{item.title}</h4>
                       <p className="mt-1.5 text-xs text-slate-400 leading-relaxed">{item.desc}</p>
                     </motion.div>
                   </StaggerItem>
